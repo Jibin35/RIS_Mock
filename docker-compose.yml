@@ -1,0 +1,22 @@
+services:
+
+  orthanc:
+    image: orthancteam/orthanc:latest
+    container_name: ris-learning-orthanc
+
+    ports:
+      - "8042:8042"
+      - "4242:4242"
+
+    environment:
+      ORTHANC_PASSWORD: orthanc
+      ORTHANC__LUA_SCRIPTS: '["/etc/orthanc/orthanc-webhook.lua"]'
+
+    volumes:
+      - orthanc-data:/var/lib/orthanc/db
+      - ./orthanc/orthanc-webhook.lua:/etc/orthanc/orthanc-webhook.lua:ro
+
+    restart: unless-stopped
+
+volumes:
+  orthanc-data:

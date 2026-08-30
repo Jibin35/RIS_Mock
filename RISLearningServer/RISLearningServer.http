@@ -1,0 +1,6 @@
+@RISLearningServer_HostAddress = http://localhost:5171
+
+post {{RISLearningServer_HostAddress}}/ris/studies/1001/ready
+Accept: application/json
+
+###

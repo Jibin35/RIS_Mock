@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="docker-compose.yml" />
+    <File Path="orthanc/orthanc-webhook.lua" />
+    <File Path="samples/test.dcm" />
+  </Folder>
+  <Project Path="RISLearningScanner/RISLearningScanner.csproj" />
+  <Project Path="RISLearningServer/RISLearningServer.csproj" />
+  <Project Path="RISLearningShared/RISLearningShared.csproj" />
+</Solution>

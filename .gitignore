@@ -1,0 +1,7 @@
+bin/
+obj/
+.vs/
+build/
+CMakeFiles/
+postgres-data/
+orthanc-data/
